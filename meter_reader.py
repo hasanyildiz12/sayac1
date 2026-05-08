@@ -15,7 +15,7 @@ import sys
 
 # ─── Ayarlar ─────────────────────────────────────────────────────────────────
 
-PORT         = "COM6"       # Windows: "COM6" | Linux/Pi: "/dev/ttyUSB0"
+PORT         = "/dev/ttyUSB0"   # Windows: "COM6" | Linux/Pi: "/dev/ttyUSB0"
 SLAVE_ID     = 1
 BAUDRATE     = 9600
 TIMEOUT      = 1.0          # saniye
