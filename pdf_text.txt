@@ -1,0 +1,749 @@
+EASTRON SDM630-Modbus V2 User Manual 
+                                                                 
+Address: No.1369 Chengnan Road, Jiaxing, Zhejiang, 314001, China.  
+Tel: 0086-573-83698881 / 83698882 Fax: 0086-573-83698883   Web: www.eastron.com.cn   
+ 
+SDM630-Modbus V2 
+DIN Rail Smart Meter for Single and Three Phase Electrical Systems 
+ 
+                                            
+ Measures kWh Kvarh, KW, Kvar, KVA, P,  
+    F, PF, Hz, dmd, V, A, etc.  
+ Bi-directional measurement IMP & EXP 
+ Two pulse outpu ts 
+ RS485 Modbus 
+ Din rail mounting 35mm 
+ 100A direct connection 
+ Better than Class 1 / B accuracy                               
+ 
+USER MANUAL  
+              2016 V 1.3EASTRON SDM630-Modbus V2 User Manual 
+                                                                 
+Address: No.1369 Chengnan Road, Jiaxing, Zhejiang, 314001, China.  
+Tel: 0086-573-83698881 / 83698882 Fax: 0086-573-83698883   Web: www.eastron.com.cn  - 1 -  Introduction  
+The SDM630-Modbus V2 measures and displays the characteristics of sin gle phase two wires 
+(1p2w ), three phase three wires (3p3w,) and three phase four wires(3p 4w) supplies, including 
+voltage, frequency, current, power ,active and reactive energy, imported or exported. Energy is 
+measured in terms of kWh, kVArh. Maximum demand current can be measure d over preset 
+periods of up to 60 minutes. In order to measure energy, the unit r equires voltage and current 
+inputs in addition to the supply required to power the product. 
+SDM630-Modbus V2 supports max. 100A direct connection, saves the cos t and avoid the trouble 
+to connect external CTs, giving the unit a cost-effective and easy operation. Built-in interfaces 
+provides pulse and RS485 Modbus RTU outputs. Configuration is password pr otected. 
+ 
+ Unit Characteristics  
+The Unit can measure and display: 
+ Line voltage and THD% (total harmonic distortion) of all phases 
+ Line Frequency 
+ Currents, Current demands and current THD% of all phases 
+ Power, maximum power demand and power factor 
+ Active energy imported and exported 
+ Reactive energy imported and export ed 
+ 
+The unit has password-protected set-up screens for: 
+ Changing password 
+ Supply system selection 1p2w, 3p3w,3p 4w 
+ Demand Interval Time(DIT) 
+ Reset for demand measurements 
+ Pulse output duration 
+ 
+Two pulse output indicates real-time energy measurement. An RS485  output allows remote 
+monitoring from another display or a computer. 
+ 
+ RS485 Serial –Modbus RTU  
+This uses an RS485 serial port with Modbus RTU protocol to provi de a means of remotely 
+monitoring and controlling the Unit 
+Set-up screens are provided for setting up the RS485 port.  
+ 
+ Pulse output 
+This provides two pulse outputs that clock up measured active and re active energy. The constant 
+of pulse output 2 for active energy is 400imp/kWh (unconfigurable), its wi dth is fixed at 100ms. 
+The default constant of configurable pulse output 1 is 400imp/kWh, default pulse widt h is 
+100ms.The configurable pulse output 1 can be set from the s et-up menu. 
+  
+ 
+ 
+ EASTRON SDM630-Modbus V2 User Manual 
+                                                                 
+Address: No.1369 Chengnan Road, Jiaxing, Zhejiang, 314001, China.  
+Tel: 0086-573-83698881 / 83698882 Fax: 0086-573-83698883   Web: www.eastron.com.cn  - 2 -  Start-up Screens 
+ 
+1 
+ The first screen lights up all display 
+segments and can be used as a display 
+check 
+ 
+2 
+ The second screen indicates the 
+firmware installed in the unit and its 
+build number.  
+3 
+ The interface performs a self-test a nd 
+indicates the result if the test passes. 
+ 
+After a short delay, the screen will display active energy measurements. 
+ 
+ Measurements  
+The buttons operate as follows: 
+1 
+ Selects the Voltage and Current display screens 
+In Set- up Mode, this is the “Left” or “Back” button.  
+2 
+ Select the Frequency and Power factor display 
+screens 
+In Set- up Mode, this is the “Up” button  
+3 
+ Select the Power display screens 
+In Set- up Mode, this is the “Down” button  
+4 
+ Select the Energy display screens 
+In Set- up mode, this is the “Enter” or “Right” button  
+ 
+ Voltage and Current  
+Each successive pressing of the 
+  button selects a new range: EASTRON SDM630-Modbus V2 User Manual 
+                                                                 
+Address: No.1369 Chengnan Road, Jiaxing, Zhejiang, 314001, China.  
+Tel: 0086-573-83698881 / 83698882 Fax: 0086-573-83698883   Web: www.eastron.com.cn  - 3 - 1-1 
+ Phase to neutral voltages(3p4w) 
+ 
+1-2 
+ Phase to neutral voltages(3p3w) 
+ 
+2 
+ Current on each phase 
+ 
+3-1 
+ Phase to neutral voltage THD%(3p4w) 
+ 
+3-2 
+ Phase to neutral voltage THD%(3p3w) 
+ 
+4 
+ Current THD% for each phase 
+ 
+ 
+ EASTRON SDM630-Modbus V2 User Manual 
+                                                                 
+Address: No.1369 Chengnan Road, Jiaxing, Zhejiang, 314001, China.  
+Tel: 0086-573-83698881 / 83698882 Fax: 0086-573-83698883   Web: www.eastron.com.cn  - 4 -  Frequency and Power factor and Demand  
+Each successive pressing of the 
+  button selects a new range: 
+1 
+ Frequency and Power Factor (total) 
+ 
+2 
+ Power Factor of each phase 
+ 
+3 
+ Max imum  Power Demand  
+ 
+4 
+ Max imum  Current Demand 
+ 
+ 
+ Power  
+Each successive pressing of the 
+  button select a new range: 
+1 
+ Instantaneous Active Power in kW 
+ EASTRON SDM630-Modbus V2 User Manual 
+                                                                 
+Address: No.1369 Chengnan Road, Jiaxing, Zhejiang, 314001, China.  
+Tel: 0086-573-83698881 / 83698882 Fax: 0086-573-83698883   Web: www.eastron.com.cn  - 5 - 2 
+ Instantaneous Reactive Power in kVAr 
+ 
+3 
+ Instantaneous Volt-amps in KVA 
+ 
+4 
+ Total kW, kVArh, kVA 
+ 
+ 
+ Energy Measurements  
+Each successive pressing of the 
+  button selects a new range: 
+1-1 
+ Imported active energy in kWh 
+ 
+1-2 
+ Exported active energy in kWh 
+ EASTRON SDM630-Modbus V2 User Manual 
+                                                                 
+Address: No.1369 Chengnan Road, Jiaxing, Zhejiang, 314001, China.  
+Tel: 0086-573-83698881 / 83698882 Fax: 0086-573-83698883   Web: www.eastron.com.cn  - 6 - 2-1 
+ Imported reactive energy in kVA rh 
+ 
+2-2 
+ Exported reactive energy in kVA rh 
+ 
+3-1 
+ Total active energy in kWh 
+ 
+3-2 
+ Total reactive energy in kVArh 
+ 
+ 
+ Set-up 
+To enter set-up mode, pressing the 
+  button for 3 seconds, until the password screen 
+appears.  
+  
+  
+Setting up is password- protected so you must enter the correct password (default ‘1000’ ) before 
+processing. If an incorrect password is entered, the display will show: Err EASTRON SDM630-Modbus V2 User Manual 
+                                                                 
+Address: No.1369 Chengnan Road, Jiaxing, Zhejiang, 314001, China.  
+Tel: 0086-573-83698881 / 83698882 Fax: 0086-573-83698883   Web: www.eastron.com.cn  - 7 -   
+  
+To exit setting-up mode, press 
+  repeatedly until the measurement screen is restored.  
+ 
+ Set-up Entry Methods 
+Some menu items, such as password, require a four-digit number entry whil e others, such as 
+supply system, require selection from a number of menu options. 
+ 
+ Menu Option Selection  
+1) Use the 
+  and 
+  buttons to select the required item from the menu. Selection 
+does not roll over between bottom and top of list 
+2) Press 
+  to confirm your selection 
+3) If an item flashes, then it can be adjusted by the 
+  and 
+  buttons. If not, there 
+maybe a further layer. 
+4) Having selected an option from the current layer, press 
+  to confirm your selection. 
+The SET indicator will appear.  
+5) Having completed a parameter setting, press 
+  to return to a higher menu level. The 
+SET indicator will be removed and you will be able to use the 
+  and 
+  buttons for 
+further menu selection. 
+6) On completion of all set-up, press 
+  repeatedly until the measurement screen is 
+restored. 
+ 
+ Number Entry Procedure  
+When setting up the unit, some screens require the entering of a number. In part icular, on entry 
+to the setting up section, a password must be entered. Digits ar e set individually, from left to 
+right. The procedure is as follows: 
+1) The current digit to be set flashes and is set using the 
+  and 
+  buttons 
+2) Press 
+  to confirm each digit setting. The SET indicator appears after the las t digit has 
+been set. EASTRON SDM630-Modbus V2 User Manual 
+                                                                 
+Address: No.1369 Chengnan Road, Jiaxing, Zhejiang, 314001, China.  
+Tel: 0086-573-83698881 / 83698882 Fax: 0086-573-83698883   Web: www.eastron.com.cn  - 8 - 3) After setting the last digit, press 
+  to exit the number setting routine. The SET indicator 
+will be removed. 
+ 
+ Change password 
+ 
+1 
+ Use the 
+  and 
+  to 
+choose the change password option 
+ 
+2-1 
+ Press the 
+  to enter the change 
+password routine. The new password 
+screen will appear with the first digit 
+flashing 
+ 
+2-2 
+ Use 
+  and 
+  to set the 
+first digit and press 
+  to confirm 
+your selection. The next digit will flash. 
+2-3 
+ Repeat the procedure for the remaining 
+three digits 
+ 
+2-4 
+ After setting the last digit, SET will show. 
+ EASTRON SDM630-Modbus V2 User Manual 
+                                                                 
+Address: No.1369 Chengnan Road, Jiaxing, Zhejiang, 314001, China.  
+Tel: 0086-573-83698881 / 83698882 Fax: 0086-573-83698883   Web: www.eastron.com.cn  - 9 - Press 
+  to exit the number setting routine and return to the Set-up menu. SET will be 
+removed 
+ 
+ DIT Demand Integration Time  
+This sets the period in minutes over which the current and power readings  are integrated for 
+maximum demand measurement. The options are: 0, 5, 8, 10, 15, 20, 30, 60 minutes 
+1 
+ From the set-up menu, use
+  and  
+ buttons to select the DI T 
+option. The screen will show the 
+currently selected integration time. 
+ 
+2-1 
+ Press 
+  to enter the selection 
+routine.  
+The current time interval will flash 
+ 
+2-2 
+ Use 
+  and 
+  buttons to 
+select the time required. 
+ 
+2-3 
+ Press 
+  to confirm the selection. 
+SET indicator will appear. 
+ 
+Press 
+  to exit the DIT selection routine and return to the menu.  
+ 
+ 
+ 
+ 
+ 
+ 
+ EASTRON SDM630-Modbus V2 User Manual 
+                                                                 
+Address: No.1369 Chengnan Road, Jiaxing, Zhejiang, 314001, China.  
+Tel: 0086-573-83698881 / 83698882 Fax: 0086-573-83698883   Web: www.eastron.com.cn  - 10 -  Backlit set- up 
+ 
+1 
+ The backlit lasting time is settable 
+Default lasting time is 60minutes 
+For example, if it ’s set as 5, the backlit 
+will be off in 5minutes from the last 
+time operation on the meter. 
+2 
+ Press 
+  to enter the selection 
+routine. The current time interval will 
+flash 
+The options can be: 
+0(always on),5,10,30,60,120minutes 
+ 
+Use 
+  and 
+  buttons to select the time required. Press 
+  to confirm the 
+set-up, 
+ 
+ Supply System 
+Use this section to set the type of power supply being monitored. 
+1 
+ From the Set-up menu, use 
+  
+and 
+  buttons to select the 
+System option. The screen will show the 
+currently selected power supply. 
+2-1 
+ Press 
+  to enter the selection 
+routine. The current selection will flash 
+ 
+2-2 
+ Use 
+  and 
+  buttons to 
+select the required system option: 
+1P2(W ),3P3(W) ,3P4(W)  EASTRON SDM630-Modbus V2 User Manual 
+                                                                 
+Address: No.1369 Chengnan Road, Jiaxing, Zhejiang, 314001, China.  
+Tel: 0086-573-83698881 / 83698882 Fax: 0086-573-83698883   Web: www.eastron.com.cn  - 11 - 2-3 
+ Press 
+  to confirm the selection. 
+SET indicator will appear. 
+ 
+Press 
+  to exit the system selection routine and return to the menu. SET will disap pear 
+and you will be returned to the main Set-up Menu 
+  
+ Pulse output   
+This option allows you to configure the pulse output 1. The output can be s et to provide a pulse 
+for a defined amount of energy active or reactive.  
+Use this section to set up the pulse output for :  
+Total kWh/ Total kVArh 
+Import kWh/Export kWh 
+Import KVArh/Export KVArh 
+1 
+ From the Set-up menu, use 
+  
+and 
+  buttons to select the 
+Pulse output option.  
+ 
+2-1 
+ Press 
+  to enter the selection 
+routine. The unit symbol will flash. 
+ 
+2-2 
+ Use 
+  and 
+  buttons to 
+choose kWh or kVArh.  
+ 
+On completion of the entry procedure, press 
+  to confirm the setting and press 
+ to return to the main set up menu. 
+ EASTRON SDM630-Modbus V2 User Manual 
+                                                                 
+Address: No.1369 Chengnan Road, Jiaxing, Zhejiang, 314001, China.  
+Tel: 0086-573-83698881 / 83698882 Fax: 0086-573-83698883   Web: www.eastron.com.cn  - 12 -  Pulse rate  
+Use this to set the energy represented by each pulse. Rate can be set to 1 pulse per  
+dFt/ 0.01 / 0.1 /1 /10/100kWh/kVArh. 
+  
+  (It shows 1 impulse = 10kWh/kVArh) 
+1 
+ From the Set-up menu, use 
+  
+and 
+  buttons to select the Pulse 
+Rate option.  
+ 
+2 
+ Press 
+  to enter the selection 
+routine. The current setting will flash. 
+Note: When it ’s dFt, 
+it means 2.5Wh/VArh 
+Use 
+  and 
+  buttons to choose pulse rate. On completion of the entry 
+procedure, press 
+  to confirm the setting and press 
+  to return to the main set 
+up menu. 
+ 
+ Pulse Duration  
+The energy monitored can be active or reactive and the pulse width can be selected as 
+200, 100(default) or 60ms. 
+ (It shows pulse width of 200ms) EASTRON SDM630-Modbus V2 User Manual 
+                                                                 
+Address: No.1369 Chengnan Road, Jiaxing, Zhejiang, 314001, China.  
+Tel: 0086-573-83698881 / 83698882 Fax: 0086-573-83698883   Web: www.eastron.com.cn  - 13 - 1-1 
+ From the Set-up menu, use 
+  
+and 
+  buttons to select the 
+Pulse width option.  
+ 
+1-2 
+ Press 
+  to enter the selection 
+routine. The current setting will flash. 
+ 
+Use 
+  and 
+  buttons to choose pulse width. On Completion of the entry 
+procedure, press 
+  to confirm the setting and press 
+  to return to the main set 
+up menu. 
+ 
+ Communication  
+There is a RS485 port can be used for communication using Modbus R TU protocol. For Modbus 
+RTU, parameters are selected from Front panel.  
+ 
+ RS485 Address  
+ (The range is from 001 to 247) 
+1 
+ From the Set-up menu, use 
+  and 
+ buttons to select the Address ID EASTRON SDM630-Modbus V2 User Manual 
+                                                                 
+Address: No.1369 Chengnan Road, Jiaxing, Zhejiang, 314001, China.  
+Tel: 0086-573-83698881 / 83698882 Fax: 0086-573-83698883   Web: www.eastron.com.cn  - 14 - 2-1 
+ Press 
+  button to enter the 
+selection routine. The current setting will 
+be flashing. 
+2-2 
+ Use 
+  and 
+  buttons to 
+choose Modbus Address(001 to 247) 
+On completion of the entry procedure, press 
+  button to confirm the setting and press 
+ button to return the main set-up menu. 
+  
+Baud Rate  
+ 
+1 
+ From the Set-up menu, use 
+  and 
+ buttons to select the Baud Rate 
+option. 
+2-1 
+ Press 
+  to enter the selection 
+routine. The current setting will flash. 
+ 
+2-2 
+ Use 
+  and 
+  buttons to 
+choose Baud rate 2.4k. 4.8k, 9.6k, 19.2k, 
+38.4k 
+ 
+On completion of the entry procedure, press 
+  to confirm the setting and press EASTRON SDM630-Modbus V2 User Manual 
+                                                                 
+Address: No.1369 Chengnan Road, Jiaxing, Zhejiang, 314001, China.  
+Tel: 0086-573-83698881 / 83698882 Fax: 0086-573-83698883   Web: www.eastron.com.cn  - 15 - 
+ to return to the main set up menu. 
+ 
+ Parity 
+ 
+1 
+ From the Set-up menu, use 
+  and 
+ buttons to select the Parity 
+option.  
+ 
+2-1 
+ Press 
+  to enter the selection 
+routine. The current setting will flash. 
+ 
+2-2 
+ Use 
+  and 
+  buttons to 
+choose Parity (EVEN / ODD / NONE) 
+ 
+On Completion of the entry procedure, press 
+  to confirm the setting and press 
+ to return to the main set up menu. 
+ 
+ Stop bits 
+ 
+1 
+ From the Set-up menu, use 
+  and 
+ buttons to select the Stop Bit 
+option.  
+ EASTRON SDM630-Modbus V2 User Manual 
+                                                                 
+Address: No.1369 Chengnan Road, Jiaxing, Zhejiang, 314001, China.  
+Tel: 0086-573-83698881 / 83698882 Fax: 0086-573-83698883   Web: www.eastron.com.cn  - 16 - 2-1 
+ Press 
+  to enter the selection 
+routine. The current setting will flash. 
+ 
+2-2 
+ Use 
+  and 
+  buttons to 
+choose Stop Bit (2 or 1) 
+ 
+On completion of the entry procedure, press 
+  to confirm the setting and press 
+ to return to the main set up menu. 
+Note: Default is 1, and only when the parity is NONE that the stop bit can be changed to 2. 
+ 
+ CLR  
+The meter provides a function to reset the maximum demand value of current and power.  
+1 
+ From the Set-up menu, use 
+  and 
+ buttons to select the reset 
+option.  
+ 
+2 
+ Press 
+  to enter the selection 
+routine. The MD will flash. 
+ 
+Press 
+  to confirm the setting and press 
+  to return to the main set up menu. 
+ 
+ Specifications  
+ 
+ Measured Parameters  
+The unit can monitor and display the following parameters of a single ph ase two wire(1p2w) , 
+three phase three wire(3p3w) or four phase four wire(3p4w) supply. EASTRON SDM630-Modbus V2 User Manual 
+                                                                 
+Address: No.1369 Chengnan Road, Jiaxing, Zhejiang, 314001, China.  
+Tel: 0086-573-83698881 / 83698882 Fax: 0086-573-83698883   Web: www.eastron.com.cn  - 17 -  
+ Voltage and Current  
+Phase to neutral voltages 100 to 289V a.c. (not for 3p3w supplies) 
+Voltages between phases 173 to 500V a.c. (3p supplies only) 
+Basic current (Ib): 10A 
+Max current : 100A 
+Min. Current: 5% of Ib 
+Starting current: 0.4% of Ib 
+Percentage total voltage harmonic distortion (THD%) for each phase to N ( not  for 3p3w supplies) 
+Percentage voltage THD% between phases (three phase supplies only) 
+Current THD% for each phase  
+ 
+ Power factor and Frequency and Max. Demand  
+Frequency in Hz 
+Instantaneous power: 
+   Power 0 to  99999 W 
+Reactive Power 0 to 99999 VAr 
+Volt-amps 0 to 99999 VA 
+Maximum demanded power since last Demand reset Power factor 
+Maximum neutral demand current, since the last Demand reset (for 3p4w supply only) 
+ 
+ Energy Measurements  
+ Imported active energy    0 to 999999.99 kWh 
+ Exported active energy     0 to 999999.99 kWh 
+ Imported reactive energy   0 to 999999.99 kVArh  
+ Exported reactive energy   0 to 999999.99 kVArh  
+ Total active energy        0 to 999999.99 kWh 
+ Total reactive energy      0 to 999999.99 kVArh 
+ 
+ Measured Inputs  
+Voltage inputs through 4-way fixed connector with 25mm ² stranded wire capacity. single phase 
+two wire(1p2w), three phase three wire(3p3w) or four phase four wi re(3p4w) unbalanced. Line 
+frequency measured from L1 voltage or L3 voltage. 
+ 
+ Accuracy  
+ Voltage                     0·5% of range maximum 
+ Current                     0·5% of nominal 
+ Frequency                   0·2% of mid-frequency 
+ Power factor                 1% of unity (0.01) 
+ Active power (W)             ±1% of range maximum 
+ Reactive power (VAr)          ±2% of range maximum 
+ Apparent power (VA)          ±1% of range maximum 
+ Active energy (Wh)            Class 1 IEC 62053- 21 
+ Reactive energy (VARh)        ±2% of range maximum EASTRON SDM630-Modbus V2 User Manual 
+                                                                 
+Address: No.1369 Chengnan Road, Jiaxing, Zhejiang, 314001, China.  
+Tel: 0086-573-83698881 / 83698882 Fax: 0086-573-83698883   Web: www.eastron.com.cn  - 18 -  Total harmonic distortion       1% up to 19st harmonic 
+ Temperature co-efficient       Voltage and current = 0.013%/ °C typical    
+                               Active energy = 0·018%/ °C, typical 
+ Response time to step input    1s, typical, to >99% of final reading, at 50 Hz. 
+                 
+ Interfaces for External Monitoring 
+Three interfaces are provided: 
+ an RS485 communication channel that can be programmed for Modbus RTU protocol  
+ an Pulse output(Pulse 1) indicating real-time measured energy.(confi gurable) 
+ an Pulse output(Pulse 2) 400imp/kWh      
+The Modbus configuration (Baud rate etc.) and the pulse output assignment s (kW/kVArh, 
+import/export etc.) are configured through the Set-up screens. 
+ 
+ Pulse Output  
+The unit provides two pulse outputs. Both pulse outputs are passive type. 
+Pulse output 1 is configurable. The pulse output can be set to generate pul ses to represent total / 
+import/export kWh or kVarh. 
+The pulse constant can be set to generate 1 pulse per:  
+dFt = 2.5 Wh/VArh 
+0.01 = 10 Wh/VArh 
+0.1 = 100 Wh/VArh 
+1 = 1 kWh/kVArh 
+10 = 10 kWh/kVArh 
+100 = 100 kWh/kVArh 
+Pulse width: 200/100/ 60ms 
+Pulse output 2 is non-configurable. It is fixed up with active kWh. The constan t is 400imp/kWh. 
+ 
+ RS485 Output for Modbus RTU 
+For Modbus RTU, the following RS485 communication parameters c an be configured from the 
+Set-up menu: 
+Baud rate 2400, 4800, 9600, 19200, 38400 
+Parity none (default)/odd/even 
+Stop bits 1 or 2 
+RS485 network address nnn – 3-digit number, 001 to 247 
+Modbus™ Word order Hi/Lo byte order is set automatically to normal or reverse. It cannot  
+be configured from the set-up menu. 
+ 
+ Reference Conditions of Influence Quantities  
+Influence Quantities are variables that affect measurement errors t o a minor degree. Accuracy is 
+verified under nominal value (within the specified tolerance) of these conditions. 
+ Ambient temperature               23°C ±2 ° C 
+ Input frequency                    50Hz ±2% 
+ Input waveform                    Sinusoidal (distortion fact or < 0·005) 
+ Magnetic field of external origin       Terrestrial flux EASTRON SDM630-Modbus V2 User Manual 
+                                                                 
+Address: No.1369 Chengnan Road, Jiaxing, Zhejiang, 314001, China.  
+Tel: 0086-573-83698881 / 83698882 Fax: 0086-573-83698883   Web: www.eastron.com.cn  - 19 -  
+ Environment 
+ Operating temperature             -25°C to +55°C* 
+ Storage temperature               -40°C to +70°C* 
+ Relative humidity                  0 to 90%, non-condensing 
+ Altitude                          Up to 2000m 
+ Warm up time                     1 0s 
+ Vibration                         10Hz to 50Hz, IEC 60068-2- 6, 2g 
+ 
+ 
+ 
+ 
+ 
+ Dimensions  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ EASTRON SDM630-Modbus V2 User Manual 
+                                                                 
+Address: No.1369 Chengnan Road, Jiaxing, Zhejiang, 314001, China.  
+Tel: 0086-573-83698881 / 83698882 Fax: 0086-573-83698883   Web: www.eastron.com.cn  - 20 -  
+ 
+ 
+ 
+Wiring diagram  
+ 
+ Three Phase Three Wires ： 
+ 
+ 
+ 
+ 
+                    
+  
+ 
+ 
+ 
+ 
+ EASTRON SDM630-Modbus V2 User Manual 
+                                                                 
+Address: No.1369 Chengnan Road, Jiaxing, Zhejiang, 314001, China.  
+Tel: 0086-573-83698881 / 83698882 Fax: 0086-573-83698883   Web: www.eastron.com.cn  - 21 -  
+ 
+ 
+ 
+ 
+ 
+ 
+ Three Phase Four Wires ： 
+ 
+ 
+ 
+ 
+                      
+  
+ 
+ 
+ 
+ EASTRON SDM630-Modbus V2 User Manual 
+                                                                 
+Address: No.1369 Chengnan Road, Jiaxing, Zhejiang, 314001, China.  
+Tel: 0086-573-83698881 / 83698882 Fax: 0086-573-83698883   Web: www.eastron.com.cn  - 22 -  
+ 
+ 
+ 
+ 
+ 
+ Single Phase two Wires ： 
+ 
+ 
+ 
+ 
+                      
+  

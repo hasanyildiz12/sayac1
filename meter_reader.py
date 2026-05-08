@@ -65,20 +65,32 @@ def connect(port=PORT, slave_id=SLAVE_ID):
     inst.serial.stopbits = 1
     inst.serial.timeout  = TIMEOUT
     inst.mode            = minimalmodbus.MODE_RTU
+    inst.clear_buffers_before_each_transaction = True
     return inst
 
 # ─── Tek değer oku ───────────────────────────────────────────────────────────
 
+# SDM630 Modbus V2 cihazları genellikle Float32 (IEEE 754) formatında veri gönderir.
+# Ancak bazı modellerde byte sıralaması (endianness) farklıdır (örn. CDAB veya DCBA).
+# Eğer veriler "0.0" olarak geliyorsa, byte sıralamasını değiştirmeniz gerekir.
+# 0 = ABCD (Big Endian), 1 = DCBA (Little Endian), 2 = BADC (Big Swap), 3 = CDAB (Little Swap)
+# Genellikle Eastron cihazlarında 0 (ABCD) veya 3 (CDAB) kullanılır.
+BYTE_ORDER = getattr(minimalmodbus, 'BYTEORDER_CDAB', 3) # Varsayılan olarak CDAB (Little Swap) deneyelim.
+
 def read_value(inst, register_address):
-    """Float32 Big-endian, FC04 ile tek parametre oku."""
+    """Float32 formatında, FC04 ile tek parametre oku."""
     try:
+        # byteorder=3 (CDAB / Little Swap) Eastron cihazlarda sıklıkla gereklidir.
         value = inst.read_float(
             registeraddress=register_address,
             functioncode=4,
-            number_of_registers=2
+            number_of_registers=2,
+            byteorder=getattr(minimalmodbus, 'BYTEORDER_LITTLE_SWAP', 3)
         )
         return round(value, 3)
     except Exception as e:
+        # Eğer hata alırsak terminalde görebilmek için (örneğin timeout veya crc error)
+        # print(f"Hata ({hex(register_address)}): {e}")
         return None
 
 # ─── Tüm parametreleri oku ───────────────────────────────────────────────────
