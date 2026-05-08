@@ -12,6 +12,7 @@ Kurulum:
 import minimalmodbus
 import time
 import sys
+import struct
 
 # ─── Ayarlar ─────────────────────────────────────────────────────────────────
 
@@ -65,32 +66,36 @@ def connect(port=PORT, slave_id=SLAVE_ID):
     inst.serial.stopbits = 1
     inst.serial.timeout  = TIMEOUT
     inst.mode            = minimalmodbus.MODE_RTU
-    inst.clear_buffers_before_each_transaction = True
+    try:
+        inst.clear_buffers_before_each_transaction = True
+    except AttributeError:
+        pass # Eski versiyon minimalmodbus'ta bu özellik yoksa atla
     return inst
 
 # ─── Tek değer oku ───────────────────────────────────────────────────────────
 
-# SDM630 Modbus V2 cihazları genellikle Float32 (IEEE 754) formatında veri gönderir.
-# Ancak bazı modellerde byte sıralaması (endianness) farklıdır (örn. CDAB veya DCBA).
-# Eğer veriler "0.0" olarak geliyorsa, byte sıralamasını değiştirmeniz gerekir.
-# 0 = ABCD (Big Endian), 1 = DCBA (Little Endian), 2 = BADC (Big Swap), 3 = CDAB (Little Swap)
-# Genellikle Eastron cihazlarında 0 (ABCD) veya 3 (CDAB) kullanılır.
-BYTE_ORDER = getattr(minimalmodbus, 'BYTEORDER_CDAB', 3) # Varsayılan olarak CDAB (Little Swap) deneyelim.
-
 def read_value(inst, register_address):
-    """Float32 formatında, FC04 ile tek parametre oku."""
+    """2 register okuyup struct ile Float32'ye çevirir."""
     try:
-        # byteorder=3 (CDAB / Little Swap) Eastron cihazlarda sıklıkla gereklidir.
-        value = inst.read_float(
-            registeraddress=register_address,
-            functioncode=4,
-            number_of_registers=2,
-            byteorder=getattr(minimalmodbus, 'BYTEORDER_LITTLE_SWAP', 3)
-        )
+        # FC04 (Input Registers) ile 2 adet 16-bit register oku
+        regs = inst.read_registers(registeraddress=register_address, number_of_registers=2, functioncode=4)
+        
+        # Eastron cihazlarında genelde float veriler iki farklı formatta gelir:
+        # 1. ABCD (Big Endian) -> regs[0], regs[1]
+        # 2. CDAB (Little Swap) -> regs[1], regs[0]
+        # Eğer ilk denemede sıfır (0.0) okuyorsanız, aşağıda regs[0] ve regs[1] yerini değiştirin.
+        
+        # Şu an CDAB formatını (Eastron'da yaygın) deniyoruz:
+        # packed = struct.pack('>HH', regs[1], regs[0]) # CDAB için (Word Swap)
+        packed = struct.pack('>HH', regs[1], regs[0]) 
+        
+        # Float32 olarak aç
+        value = struct.unpack('>f', packed)[0]
         return round(value, 3)
+        
     except Exception as e:
-        # Eğer hata alırsak terminalde görebilmek için (örneğin timeout veya crc error)
-        # print(f"Hata ({hex(register_address)}): {e}")
+        # Hatayı konsola yazdır ki sorunu görebilelim
+        print(f"Hata ({hex(register_address)}): {type(e).__name__} - {e}")
         return None
 
 # ─── Tüm parametreleri oku ───────────────────────────────────────────────────
